@@ -1,8 +1,9 @@
-import React from 'react';
+import React from 'react'
 import { useState } from 'react'
 import TypingPhase  from './components/TypingPhase'
-import RiddlePhase from './components/RiddlePhase';
-import Piano from './components/Piano';
+import QuestionPhase from './components/QuestionPhase'
+import RiddlePhase from './components/RiddlePhase'
+import Piano from './components/Piano'
 import "./global.css"
 
 const styles = {
@@ -29,8 +30,9 @@ const App: React.FC = () => {
   return (
     <div style={styles}>
       {phase === 1 && <TypingPhase onComplete={goToNextPhase} />}
-      {phase === 2 && <Piano onComplete={goToNextPhase} />}
-      {phase === 3 && <RiddlePhase onCorrectAnswer={() => window.location.href = 'https://youtube.com'} />}
+      {phase === 2 && <QuestionPhase onComplete={goToNextPhase} />}
+      {phase === 3 && <Piano onComplete={goToNextPhase} />}
+      {phase === 4 && <RiddlePhase onCorrectAnswer={() => window.location.href = 'https://youtube.com'} />}
       
     </div>
   )

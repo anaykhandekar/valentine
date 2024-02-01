@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { noteAudioMap } from '../global/sounds';
+import { noteAudioMap } from '../global/notes';
 
 interface KeyProps {
     key: number;
