@@ -120,7 +120,7 @@ const QuestionPhase: React.FC<QuestionPhaseProps> = ({ onComplete }) => {
         inputRef5.current?.focus();
       } else if (isCorrect3 && !isCorrect4) {
         inputRef7.current?.focus();
-      } else if (isCorrect4) {
+      } else if (correct4) {
         onComplete();
       }
     };
