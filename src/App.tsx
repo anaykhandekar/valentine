@@ -21,7 +21,7 @@ const styles = {
 
 const App: React.FC = () => {
 
-  const [phase, setPhase] = useState(1)
+  const [phase, setPhase] = useState(4)
 
   const goToNextPhase = () => {
     setPhase(prevPhase => prevPhase + 1)
@@ -29,11 +29,10 @@ const App: React.FC = () => {
 
   return (
     <div style={styles}>
-      {phase === 1 && <TypingPhase onComplete={goToNextPhase} />}
+      {/* {phase === 1 && <TypingPhase onComplete={goToNextPhase} />}
       {phase === 2 && <QuestionPhase onComplete={goToNextPhase} />}
-      {phase === 3 && <Piano onComplete={goToNextPhase} />}
+      {phase === 3 && <Piano onComplete={goToNextPhase} />} */}
       {phase === 4 && <RiddlePhase onCorrectAnswer={() => window.location.href = 'https://youtube.com'} />}
-      
     </div>
   )
 }

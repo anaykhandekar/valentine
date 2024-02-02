@@ -49,7 +49,7 @@ const TypingPhase: React.FC<TypingPhaseProps> = ({ onComplete }) => {
           // This is where you adjust the typing speed
           const timeoutId = setTimeout(() => {
             setTypedText(currentPhrase.slice(0, typedText.length + 1));
-          }, 60); // Typing speed adjusted to be faster
+          }, 63); // Typing speed adjusted to be faster
           return () => clearTimeout(timeoutId);
         } else {
           const timeoutId = setTimeout(() => {

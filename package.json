@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material/textfield": "^14.0.0",
     "@types/jest": "^29.5.11",
     "@types/node": "^20.11.11",
     "@types/react": "^18.2.48",
@@ -15,8 +16,11 @@
     "react-scripts": "5.0.1",
     "react-simple-typewriter": "^5.0.1",
     "react-typist-component": "^1.0.5",
+    "styled-components": "^6.1.8",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "use-scramble": "^2.2.15",
+    "web-vitals": "^2.1.4",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -43,6 +47,7 @@
     ]
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.202"
+    "@types/lodash": "^4.14.202",
+    "@types/webfontloader": "^1.6.38"
   }
 }
