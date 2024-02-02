@@ -60,14 +60,14 @@ const QuestionPhase: React.FC<QuestionPhaseProps> = ({ onComplete }) => {
   })
 
   const { ref: scrambling2 } = useScramble({
-    text: 'FIREBALL + PIZOOKIE',
+    text: 'FIREBALL x PIZOOKIE',
     playOnMount: true,
     speed: 0.25,
     scramble: 100000000,
   });
 
   const { ref: unscrambled2 } = useScramble({
-    text: 'FIREBALL + PIZOOKIE',
+    text: 'FIREBALL x PIZOOKIE',
     playOnMount: true,
     speed: 0.25,
     scramble: 10,
@@ -155,7 +155,7 @@ const QuestionPhase: React.FC<QuestionPhaseProps> = ({ onComplete }) => {
         <StyledInput type="text" ref={inputRef2} />
       </DoubleInputContainer>
 
-      <div ref={correct1 ? unscrambled2 : scrambling2}>FIREBALL + PIZOOKIE</div>
+      <div ref={correct1 ? unscrambled2 : scrambling2}>FIREBALL x PIZOOKIE</div>
       <div>=</div>
       <DoubleInputContainer>
         <StyledInput type="text" ref={inputRef3} />

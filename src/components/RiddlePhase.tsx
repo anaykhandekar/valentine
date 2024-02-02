@@ -48,7 +48,8 @@ const RiddlePhase: React.FC<RiddlePhaseProps> = ({ onCorrectAnswer }) => {
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value);
-    if (e.target.value.toLowerCase().includes("la cajera es tan hermosa")) {
+    const answer = e.target.value.toLowerCase();
+    if (answer.includes("la cajera es tan hermosa") || answer.includes("la cajera es hermosa")) {
       onCorrectAnswer();
     }
   };
