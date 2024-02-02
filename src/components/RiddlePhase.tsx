@@ -57,16 +57,16 @@ const RiddlePhase: React.FC<RiddlePhaseProps> = ({ onCorrectAnswer }) => {
     <div style={{ display: 'flex', flexDirection: 'column', height: '100vh'}}>
       <div style={{ display: 'flex', justifyContent: 'space-between', padding: '20px', gap: '200px', marginTop: '100px', marginLeft: '30px' }}>
         <div>
-          <Line style={{ animationDelay: '1s', marginRight: '100px' }}>Cloaked in sweet, here I stand</Line>
-          <Line style={{ marginLeft: '20px', animationDelay: '2s' }}>outside a realm of flavor grand.</Line>
-          <Line style={{ animationDelay: '3s', marginRight: '130px'}}>With a message in my hand,</Line>
-          <Line style={{ marginLeft: '20px', animationDelay: '4s' }}>it speaks of beauty, not of land.</Line>
+          <Line style={{ animationDelay: '2s', marginRight: '100px' }}>Cloaked in sweet, here I stand</Line>
+          <Line style={{ marginLeft: '20px', animationDelay: '4s' }}>outside a realm of flavor grand.</Line>
+          <Line style={{ animationDelay: '5s', marginRight: '130px'}}>With a message in my hand,</Line>
+          <Line style={{ marginLeft: '20px', animationDelay: '8s' }}>it speaks of beauty, not of land.</Line>
         </div>
         <div>
-          <Line style={{ animationDelay: '5s', marginRight: '100px' }}>A ruby hidden in these walls.</Line>
-          <Line style={{ marginLeft: '50px', animationDelay: '6s' }}>Years of love & no missed calls.</Line>
-          <Line style={{ animationDelay: '7s', marginRight:'35px' }}>Rare moment when our paths align,</Line>
-          <Line style={{ marginLeft: '40px', animationDelay: '8s' }}>This sign I hold, her secret sign.</Line>
+          <Line style={{ animationDelay: '10s', marginRight: '100px' }}>A ruby hidden in these walls.</Line>
+          <Line style={{ marginLeft: '50px', animationDelay: '12s' }}>Years of love & no missed calls.</Line>
+          <Line style={{ animationDelay: '14s', marginRight:'35px' }}>Rare moment when our paths align,</Line>
+          <Line style={{ marginLeft: '40px', animationDelay: '16s' }}>This sign I hold, her secret sign.</Line>
         </div>
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexGrow: 1 }}>
@@ -76,7 +76,7 @@ const RiddlePhase: React.FC<RiddlePhaseProps> = ({ onCorrectAnswer }) => {
             value={inputValue}
             onChange={handleInputChange}
             placeholder="what did it say again?"
-            style={{ animationDelay: '9s', border: 'none', borderBottom: '2px solid white', backgroundColor: 'transparent', color: 'white', fontSize: '36px', width: '50%', textAlign: 'center', margin: '0 5px'}}
+            style={{ animationDelay: '20s', border: 'none', borderBottom: '2px solid white', backgroundColor: 'transparent', color: 'white', fontSize: '36px', width: '50%', textAlign: 'center', margin: '0 5px'}}
           />
         )}
       </div>
