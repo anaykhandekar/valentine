@@ -51,7 +51,6 @@ const QuestionPhase: React.FC<QuestionPhaseProps> = ({ onComplete }) => {
   const [correct1, setCorrect1] = useState(false)
   const [correct2, setCorrect2] = useState(false)
   const [correct3, setCorrect3] = useState(false)
-  const [correct4, setCorrect4] = useState(false)
 
   const { ref: unscrambled1 } = useScramble({
     text: 'ZOLTAR + GROTTO',
@@ -112,7 +111,6 @@ const QuestionPhase: React.FC<QuestionPhaseProps> = ({ onComplete }) => {
       setCorrect1(isCorrect1);
       setCorrect2(isCorrect2);
       setCorrect3(isCorrect3);
-      setCorrect4(isCorrect4);
 
       if (isCorrect1 && !isCorrect2) {
         inputRef3.current?.focus();
@@ -120,8 +118,8 @@ const QuestionPhase: React.FC<QuestionPhaseProps> = ({ onComplete }) => {
         inputRef5.current?.focus();
       } else if (isCorrect3 && !isCorrect4) {
         inputRef7.current?.focus();
-      } else if (correct4) {
-        onComplete();
+      } else if (isCorrect4) {
+        onComplete()
       }
     };
   
@@ -146,7 +144,7 @@ const QuestionPhase: React.FC<QuestionPhaseProps> = ({ onComplete }) => {
         };
       }
     });
-  }, [onComplete, correct4]);
+  }, []);
 
   return(
     <QuestionContainer>
