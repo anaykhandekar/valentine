@@ -146,7 +146,7 @@ const QuestionPhase: React.FC<QuestionPhaseProps> = ({ onComplete }) => {
         };
       }
     });
-  }, [onComplete]);
+  }, [onComplete, correct4]);
 
   return(
     <QuestionContainer>
