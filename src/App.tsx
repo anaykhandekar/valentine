@@ -16,9 +16,6 @@ const styles = {
   textAlign: 'center' as const,
 };
 
-
-
-
 const App: React.FC = () => {
 
   const [phase, setPhase] = useState(1)

@@ -9,15 +9,12 @@ const styles = {
   typingText: {
     color: 'white',
     fontSize: '32px',
-    fontFamily: 'Courier New',
-    whiteSpace: 'pre-wrap' // To maintain whitespace and line breaks in the text
   },
   startButton: {
     padding: '10px 20px',
     fontSize: '20px',
     cursor: 'pointer',
     margin: '20px',
-    backgroundColor: '#f0f0f0'
   }
 }
 

@@ -88,14 +88,14 @@ const QuestionPhase: React.FC<QuestionPhaseProps> = ({ onComplete }) => {
   })
 
   const { ref: scrambling4 } = useScramble({
-    text: 'SALVATORE + GOOSEBERRIES',
+    text: 'MICHAELADA + NOJITO',
     playOnMount: true,
     speed: 0.25,
     scramble: 100000000,
   });
 
   const { ref: unscrambled4 } = useScramble({
-    text: 'SALVATORE + GOOSEBERRIES',
+    text: 'MICHAELADA + NOJITO',
     playOnMount: true,
     speed: 0.25,
     scramble: 10,
@@ -103,10 +103,10 @@ const QuestionPhase: React.FC<QuestionPhaseProps> = ({ onComplete }) => {
 
   useEffect(() => {
     const checkCorrectness = () => {
-      const isCorrect1 = inputRef1.current?.value === '1' && inputRef2.current?.value === '2';
-      const isCorrect2 = inputRef3.current?.value === '3' && inputRef4.current?.value === '4';
-      const isCorrect3 = inputRef5.current?.value === '5' && inputRef6.current?.value === '6';
-      const isCorrect4 = inputRef7.current?.value === '7' && inputRef8.current?.value === '8';
+      const isCorrect1 = inputRef1.current?.value === '2' && inputRef2.current?.value === '1';
+      const isCorrect2 = inputRef3.current?.value === '8' && inputRef4.current?.value === '0';
+      const isCorrect3 = inputRef5.current?.value === '3' && inputRef6.current?.value === '0';
+      const isCorrect4 = inputRef7.current?.value === '1' && inputRef8.current?.value === '9';
   
       setCorrect1(isCorrect1);
       setCorrect2(isCorrect2);
@@ -169,7 +169,7 @@ const QuestionPhase: React.FC<QuestionPhaseProps> = ({ onComplete }) => {
         <StyledInput type="text" ref={inputRef6} />
       </DoubleInputContainer>
 
-      <div ref={correct3 ? unscrambled4 : scrambling4}>SALVATORE + GOOSEBERRIES</div>
+      <div ref={correct3 ? unscrambled4 : scrambling4}>MICHAELADA + NOJITO</div>
       <div>=</div>
       <DoubleInputContainer>
         <StyledInput type="text" ref={inputRef7} />
