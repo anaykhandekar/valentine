@@ -29,7 +29,7 @@ const App: React.FC = () => {
       {phase === 1 && <TypingPhase onComplete={goToNextPhase} />}
       {phase === 2 && <QuestionPhase onComplete={goToNextPhase} />}
       {phase === 3 && <Piano onComplete={goToNextPhase} />}
-      {phase === 4 && <RiddlePhase onCorrectAnswer={() => window.location.href = 'https://youtube.com'} />}
+      {phase === 4 && <RiddlePhase onCorrectAnswer={() => window.location.href = 'https://youtu.be/euNauju1jBc'} />}
     </div>
   )
 }

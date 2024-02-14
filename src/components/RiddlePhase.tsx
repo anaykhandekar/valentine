@@ -77,7 +77,7 @@ const RiddlePhase: React.FC<RiddlePhaseProps> = ({ onCorrectAnswer }) => {
             value={inputValue}
             onChange={handleInputChange}
             placeholder="what did it say again?"
-            style={{ animationDelay: '20s', border: 'none', borderBottom: '2px solid white', backgroundColor: 'transparent', color: 'white', fontSize: '36px', width: '50%', textAlign: 'center', margin: '0 5px'}}
+            style={{ animationDelay: '18s', border: 'none', borderBottom: '2px solid white', backgroundColor: 'transparent', color: 'white', fontSize: '36px', width: '50%', textAlign: 'center', margin: '0 5px'}}
           />
         )}
       </div>

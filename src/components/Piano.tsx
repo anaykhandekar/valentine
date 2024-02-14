@@ -3,6 +3,7 @@ import Key from './Key';
 import { NOTES } from '../global/constants'
 import _ from 'lodash'
 
+
 interface PianoProps {
   onComplete: () => void;
 }
@@ -26,6 +27,8 @@ const Piano: React.FC<PianoProps> = ({onComplete}) => {
         flexDirection: 'row',
     }
 
+    const fnaf = new Audio(require('../audio/fnaf.mp3'))
+
     
 
     const keys = _.map(NOTES, (note, index) => {
@@ -38,9 +41,32 @@ const Piano: React.FC<PianoProps> = ({onComplete}) => {
         )
     })
 
+    
+    
+
     return (
-        <div style={styles as React.CSSProperties}>
-            {keys}
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <div style={styles as React.CSSProperties}>
+                {keys}
+            </div>
+            <button
+                style={{ 
+                    backgroundColor: 'red', 
+                    color: 'white', 
+                    borderRadius: '100%', 
+                    marginLeft: '100px', 
+                    border: '2px solid gold', 
+                    boxShadow: '0 0 10px gold', 
+                    cursor: 'pointer',
+                    fontSize: '16px',
+                    width: '100px',
+                    height: '100px',
+                    marginTop: '100px'
+                }}
+                onClick={() => { fnaf.play() }}
+            >
+                aurf
+            </button>
         </div>
     );
 }

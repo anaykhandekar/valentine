@@ -24,7 +24,7 @@ const phrases = [
   "But you have to answer some things first.",
   "Flip over your letter. Good luck baby.",
   "muah muah muuaaah muah muah",
-  "Find each word. Use its highest column number. Solve the puzzle."
+  "Find each word. Use its lowest row number. Solve the puzzle."
 ];
 
 const TypingPhase: React.FC<TypingPhaseProps> = ({ onComplete }) => {
