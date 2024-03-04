@@ -42,7 +42,7 @@ const RiddlePhase: React.FC<RiddlePhaseProps> = ({ onCorrectAnswer }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowInput(true);
-    }, 8 * 1000); // 8 lines * 1s animation each
+    }, 8 * 1000); // 8 lines * 1s animation each ya
     return () => clearTimeout(timer);
   }, []);
 
