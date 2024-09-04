@@ -1,4 +1,4 @@
-# Valentine's Day Website for My Girlfriend ❤️
+# Valentine's Day Website for My Girlfriend
 
 This is a small website I created for my girlfriend to celebrate our 2nd anniversary.
 
